@@ -1,0 +1,41 @@
+@charset "utf-8";
+.footerIn{
+    width:100%;
+    background: #666666;
+    padding-bottom: 10px;
+}
+.footCont{
+    width:90%;
+    margin: 0px auto;
+    padding-top: 15px;
+}
+.footCont ul{
+    /*margin-bottom: 15px;*/
+}
+
+.footCont ul h3{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+    color: #ffffff;
+}
+.footCont ul li{
+    /*margin-top: 7px;*/
+}
+.footCont ul a{
+    display: block;
+    line-height: 30px;
+    float: left;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #afafaf;
+}
+.footCont p{
+    font-size: 14px;
+    color: #afafaf;
+    line-height: 25px;
+}
+.footCont p.second{
+    font-size: 12.8px;
+
+}

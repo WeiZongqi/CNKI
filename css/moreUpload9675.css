@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+.lb_box .item{
+    position: relative;
+    width: 287px;
+    height: 36px;
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #f9f9f9;
+    margin-bottom: 28px;
+}
+/*.lb_box .noFirst{
+    width: 287px;
+    height: 36px;
+    font-size: 14px;
+    border: 1px solid #e6e6e6;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: #f9f9f9;
+}*/
+.lb_box .state{
+    left: 0;
+    top: -36px;
+    margin-left: 300px;
+    position: relative;
+
+}
+.tishi{
+    margin-bottom: 10px;
+}
+.item .tishi {
+    position: absolute;
+    top: 38px;
+    font-size: 12px;
+    color: #ff5929;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 0px;
+    z-index: 10;
+}
+.lb_box .uploadDel{
+    border-width: 0px;
+    -moz-border-radius:0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    background:transparent;
+}
+.webuploader-pick {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    width: auto;
+    color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+}
