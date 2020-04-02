@@ -1155,6 +1155,9 @@ function scanPayment(ele,obj2){
                          var fuid = $("#hidden_params").attr('f');
                          get_mp_qrcode({saleid:dataList.paper_id, fuid:fuid, unionid_page_id:unionid_page_id});
                          var mp_qrcode_url = $("#hidden_params").attr('mp_qrcode_url');
+
+                        // console.log('+++',my_qrcode_url);
+
                          if(mp_qrcode_url) {
                              var inf = '<div class="modelCont2"><img style="width:150px" src="'+mp_qrcode_url+'"><br><span style="position:relative;left:23%">关注公众号</span><br><span style="margin-left:5px">检测完成后就会通知您</span></div>';
                              $(".modelCont").after(inf);
@@ -1708,7 +1711,8 @@ function insertPayBtn() {
 	  if($CONFIG['uid']==13 || $CONFIG['uid']==1710 || $CONFIG['uid']==1737){
 		  pay_tuiguang_class = "a_tuiguang";
 	  }
-	  for (i = 0; i < payWay.length; i++) {
+    for (i = 0; i < 1; i++) {
+	  // for (i = 0; i < payWay.length; i++) {
 	    if (payWay[i] == 0) {
 	      con.push('<span class="way_00" payList="0"><a href="javascript:;">淘宝订单<i></i></a><div class="maskLayer"></div></span>');
 	    }
@@ -1771,7 +1775,7 @@ function insertPayList() {
 
       con.push('<div class="whatOrder" style="position:relative;bottom:11px">');
       con.push('<div style="height:12px"></div>');
-      con.push('<span>什么是订单编号？</span>');
+      // con.push('<span>什么是订单编号？</span>');
       con.push('<p class="whatDes">');
       con.push('<img src="//css.celunwen.com/assets_v2/images/right/tb_tips.jpg"/>');
       con.push('</p>');
@@ -2024,7 +2028,10 @@ function scanTaobaoQrcode() {
 		      width : 150,
 		      height : 150
 		  });
-		  tb_qrcode.makeCode($CONFIG['guide_url']);
+      // console.log('++',$CONFIG['guide_url'])
+      lueluelue = 'https://item.taobao.com/item.htm?id=614261613742'
+		  tb_qrcode.makeCode(lueluelue);
+      // tb_qrcode.makeCode($CONFIG['guide_url']);
 		}
 	}
 }
